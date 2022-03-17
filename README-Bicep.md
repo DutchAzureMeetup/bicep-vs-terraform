@@ -26,7 +26,7 @@ az login
 
 # 3. Create your bicep files
 
-That's up to you ;)
+That's up to you :wink:
 
 # 4. Deploy
 
