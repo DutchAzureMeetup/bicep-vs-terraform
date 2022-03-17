@@ -11,7 +11,7 @@ winget install -e --id Microsoft.Bicep
 
 ## With a custom Powershell Script:
 
-Use the install-bicep.ps1 in this repo (in the scripts folder)
+Use the [install-bicep.ps1](scripts/install-bicep.ps1) in this repo (in the scripts folder)
 
 # 2. Login to Azure
 
