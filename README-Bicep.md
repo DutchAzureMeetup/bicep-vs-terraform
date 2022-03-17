@@ -33,15 +33,20 @@ That's up to you :wink:
 ## With Azure Powershell:
 
 ### subscription-level deployment:
+```
 New-AzSubscriptionDeployment -Location <location> -TemplateFile <path-to-bicep>
-
+```
 ### resourcegroup-level deployment:
+```
 New-AzResourceGroupDeployment -ResourceGroupName <resource-group-name> -TemplateFile <path-to-bicep>
-
+```
 ## With Azure CLI:
 
 ### subscription-level deployment:
+```
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-bicep>
-
+```
 ### resourcegroup-level deployment:
+```
 az deployment sub create --location <location> --template-file <path-to-bicep>
+```
