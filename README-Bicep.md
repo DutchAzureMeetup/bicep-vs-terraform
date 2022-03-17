@@ -9,7 +9,7 @@ choco install bicep
 winget install -e --id Microsoft.Bicep
 ```
 
-## With a custom Powershell Script:
+## With a custom Powershell script:
 
 Use the [install-bicep.ps1](scripts/install-bicep.ps1) in this repo (in the scripts folder)
 
