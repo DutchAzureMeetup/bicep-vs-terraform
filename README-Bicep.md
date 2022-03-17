@@ -1,47 +1,43 @@
-# bicep-vs-terraform
+# 1. Install bicep: 
 
-# Quickstart 
-
-## Bicep
-
-### 1. Install bicep: 
-
-#### With chocolatey 
+## With chocolatey:
 ```
 choco install bicep
 ``` 
-#### With Winget
+## With Winget:
 ```
 winget install -e --id Microsoft.Bicep
 ```
 
-### 2. Login to Azure
+# 2. Login to Azure
 
-#### With Azure Powershell 
+## With Azure Powershell:
 ```
 Connect-AzAccount
 ``` 
-#### With Azure CLI
+## With Azure CLI:
 ```
 az login
 ```
 
-### 3. Create your bicep files
+# 3. Create your bicep files
 
-### 4. Deploy
+That's up to you ;)
 
-#### With Azure Powershell 
+# 4. Deploy
 
-##### subscription-level deployment:
+## With Azure Powershell:
+
+### subscription-level deployment:
 New-AzSubscriptionDeployment -Location <location> -TemplateFile <path-to-bicep>
 
-##### resourcegroup-level deployment:
+### resourcegroup-level deployment:
 New-AzResourceGroupDeployment -ResourceGroupName <resource-group-name> -TemplateFile <path-to-bicep>
 
-#### With Azure CLI 
+## With Azure CLI:
 
-##### subscription-level deployment:
+### subscription-level deployment:
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-bicep>
 
-##### resourcegroup-level deployment:
+### resourcegroup-level deployment:
 az deployment sub create --location <location> --template-file <path-to-bicep>
